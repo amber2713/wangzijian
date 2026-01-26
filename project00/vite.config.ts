@@ -3,15 +3,20 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // 部署到 https://amber2713.github.io/wangzijian/ 时，必须配置此项
-  base: '/wangzijian/project00/', 
-  
   plugins: [react()],
   
+  // 这里的 base 必须对应你 GitHub Pages 的子路径
+  // 结尾的斜杠 / 非常重要，不能漏掉
+  base: '/wangzijian/project00/',
+
   build: {
-    // 确保打包输出目录正确（默认就是 dist）
+    // 确保打包出的资源路径是相对路径
     outDir: 'dist',
-    // 资源存放的文件夹
     assetsDir: 'assets',
   },
+  
+  server: {
+    // 本地开发时的配置（可选）
+    port: 5173,
+  }
 })
