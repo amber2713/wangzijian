@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   // 部署到 https://amber2713.github.io/wangzijian/ 时，必须配置此项
-  base: '/wangzijian/', 
+  base: '/wangzijian/project00/', 
   
   plugins: [react()],
   
