@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: 'Consolas', 'KaiTi', '楷体', '楷体_GB2312', 'STKaiti', monospace, serif;
+  }
+  
+  body {
+    font-family: 'Consolas', 'KaiTi', '楷体', '楷体_GB2312', 'STKaiti', monospace, serif;
+  }
+}
